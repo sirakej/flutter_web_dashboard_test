@@ -11,44 +11,31 @@ class SideMenu extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: [
-          DrawerHeader(
-            child: Image.asset("assets/images/logo.png"),
-          ),
+          Container(height: 200,),
           DrawerListTile(
             title: "Dashboard",
             svgSrc: "assets/icons/menu_dashbord.svg",
             press: () {},
           ),
+          Container(height: 16,),
           DrawerListTile(
             title: "Transaction",
             svgSrc: "assets/icons/menu_tran.svg",
             press: () {},
           ),
-          DrawerListTile(
-            title: "Task",
-            svgSrc: "assets/icons/menu_task.svg",
-            press: () {},
-          ),
-          DrawerListTile(
-            title: "Documents",
-            svgSrc: "assets/icons/menu_doc.svg",
-            press: () {},
-          ),
-          DrawerListTile(
-            title: "Store",
-            svgSrc: "assets/icons/menu_store.svg",
-            press: () {},
-          ),
+          Container(height: 16,),
           DrawerListTile(
             title: "Notification",
             svgSrc: "assets/icons/menu_notification.svg",
             press: () {},
           ),
+          Container(height: 16,),
           DrawerListTile(
             title: "Profile",
             svgSrc: "assets/icons/menu_profile.svg",
             press: () {},
           ),
+          Container(height: 16,),
           DrawerListTile(
             title: "Settings",
             svgSrc: "assets/icons/menu_setting.svg",
@@ -76,15 +63,15 @@ class DrawerListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       onTap: press,
-      horizontalTitleGap: 0.0,
+      horizontalTitleGap: 9.0,
       leading: SvgPicture.asset(
         svgSrc,
-        color: Colors.white54,
+        color: Colors.white,
         height: 16,
       ),
       title: Text(
         title,
-        style: TextStyle(color: Colors.white54),
+        style: TextStyle(color: Colors.white),
       ),
     );
   }

@@ -3,7 +3,7 @@ import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../constants.dart';
+import '../../../utils/constants.dart';
 
 class RecentFiles extends StatelessWidget {
   const RecentFiles({
@@ -22,7 +22,7 @@ class RecentFiles extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Recent Files",
+            "TABLE INFORMATION",
             style: Theme.of(context).textTheme.subtitle1,
           ),
           SizedBox(
